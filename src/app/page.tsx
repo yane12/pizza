@@ -6,16 +6,16 @@ import Hero from "@/components/Hero";
 import TopRestaurant from "@/components/TopRestaurant";
 import PopularPizza from "@/components/PopularPizza";
 import Footer from "@/components/Footer";
+import FastingPizza from "@/components/FastingPizza";
 
 export default function Home() {
   return (
     <Box>
-      
       <Hero/>
       <FeaturedPizza/>
       <TopRestaurant/>
       <PopularPizza/>
-      <BottomNavigation/>
+      <FastingPizza/>
       <Footer/>
     </Box>
   );
