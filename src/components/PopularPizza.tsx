@@ -6,7 +6,7 @@ import { Box, Button, Container, Typography } from '@mui/material'
 
 export default function PopularPizza() {
   return (
-    <Box py={10} bgcolor={'#ede8df'}>
+    <Box py={10} sx={{background: 'rgba(251, 231, 239)'}}>
       <Container>
         <Typography variant='h2' fontSize={40} color='#717680' pb={8}>Popular Pizzas</Typography>
         <Box width={'30%'}>

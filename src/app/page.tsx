@@ -7,10 +7,12 @@ import TopRestaurant from "@/components/TopRestaurant";
 import PopularPizza from "@/components/PopularPizza";
 import Footer from "@/components/Footer";
 import FastingPizza from "@/components/FastingPizza";
+import Navbar from "@/components/Navbar";
 
 export default function Home() {
   return (
     <Box>
+      <Navbar/>
       <Hero/>
       <FeaturedPizza/>
       <TopRestaurant/>

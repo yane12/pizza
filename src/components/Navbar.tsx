@@ -4,22 +4,25 @@ import Link from "next/link";
 
 export default function Navbar() {
   return (
-    <Box sx={{ backgroundColor: '#ffd9bd' }}>
+    <Box bgcolor={'rgba(251, 231, 239)'}>
       <Container sx={{ py: { xs: 2, md: 3 } }}>
         <Box sx={{ display: 'flex', alignItems: 'center', justifyContent: 'space-between' }}>
-          <Box sx={{ display: "flex", alignItems: "center", color: '#bf743b' }}>
-            <LocalPizza />
-            <Typography variant="h1" sx={{fontSize: "24px", fontWeight: 800}}>Pizza</Typography>
+          <Box>
+            <Link href='/'>
+              <Box display={"flex"} alignItems={"center"} color={'#bf743b'}>
+                <LocalPizza />
+                <Typography variant="h1" sx={{ fontSize: "24px", fontWeight: 800 }}>Pizza</Typography>
+              </Box>
+            </Link>
           </Box>
 
-          <Box sx={{
-            display: 'flex',
-            gap: '2rem',
-            color: '#5c5a57',
-            fontWeight: '700',
-            fontSize: '18px',
-          
-          }}>
+          <Box
+            display={'flex'}
+            gap={10}
+            color={'#5c5a57'}
+            fontWeight={600}
+            fontSize={20}
+          >
             <Link href='/'>
               Home
             </Link>
@@ -30,8 +33,8 @@ export default function Navbar() {
 
           <Button sx={
             {
-              backgroundColor: "#bf743b",
-              color: "#f7ce97",
+              backgroundColor: "#ff8c00",
+              color: "white",
               fontWeight: "700",
               fontSize: "18px",
               cursor: "pointer",

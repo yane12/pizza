@@ -1,13 +1,14 @@
-import { Box, Container, InputBase, Typography } from '@mui/material'
+import { Box, Container, InputAdornment, InputBase, OutlinedInput, Typography } from '@mui/material'
 import React from 'react'
 import pizzaImage from './hero-pizza.png';
 import Image from 'next/image';
+import Search from '@mui/icons-material/Search';
+import SearchRounded from '@mui/icons-material/SearchRounded';
 
 export default function Hero() {
   return (
-    <Box sx={{
-      backgroundColor: "#ffd9bd",
-      py: '4rem',
+    <Box py={10} sx={{
+      background: 'linear-gradient(rgba(251, 231, 239), rgba(251, 231, 239), rgba(252, 162, 95, .6), rgba(251, 231, 239))',
     }}>
       <Container sx={{
         display: 'flex',
@@ -30,7 +31,7 @@ export default function Hero() {
             placeholder text commonly used to demonstrate the visual form
             of a document of typeface without.
           </Typography>
-          <InputBase sx={{
+          <OutlinedInput sx={{
             backgroundColor: "white",
             borderRadius: 10,
             fontSize: '18px',
@@ -39,7 +40,13 @@ export default function Hero() {
             height: 80,
             mt: 3,
             color: "#5c5a57"
-          }} placeholder='search' />
+          }}
+            endAdornment={
+              <InputAdornment position="end">
+                <SearchRounded sx={{ color: 'orange', fontSize: '48px' }} />
+              </InputAdornment>
+            }
+            label='search' />
         </Box>
         <Box sx={{
           width: '30%',

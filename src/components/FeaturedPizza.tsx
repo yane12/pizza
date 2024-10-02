@@ -5,7 +5,10 @@ import { Box, Button, Container, Typography } from '@mui/material'
 
 export default function FeaturedPizza() {
   return (
-    <Box sx={{ py: 8, backgroundColor: '#ede8df' }}>
+    <Box sx={{
+      py: 8,
+      background: 'rgba(251, 231, 239)'
+    }}>
       <Container>
         <Box>
           <Typography variant='h2' sx={{

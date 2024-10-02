@@ -7,7 +7,7 @@ import LunchDining from '@mui/icons-material/LunchDining'
 
 export default function TopRestaurant() {
   return (
-    <Box sx={{ py: 10, backgroundColor: '#ede8df' }}>
+    <Box sx={{ py: 10, background: 'rgba(251, 231, 239)' }}>
       <Container>
         <Typography variant='h2' sx={{ fontSize: 40, color: '#717680', pb: 8 }}>Top Restaurants</Typography>
 
